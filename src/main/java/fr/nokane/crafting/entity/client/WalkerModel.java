@@ -18,7 +18,7 @@ public class WalkerModel extends GeoModel<WalkerEntity> {
 
     @Override
     public ResourceLocation getTextureResource(WalkerEntity animatable) {
-        return new ResourceLocation(Constants.MOD_ID, "textures/entity/walker.png");
+        return WalkerRenderer.LOCATION_BY_VARIANT.get(animatable.getVariant());
     }
 
     @Override
