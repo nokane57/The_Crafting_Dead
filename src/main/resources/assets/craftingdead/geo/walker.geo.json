@@ -41,14 +41,14 @@
 				},
 				{
 					"name": "left_leg",
-					"pivot": [-2, 2, 2],
+					"pivot": [0, 12, -2],
 					"cubes": [
 						{"origin": [0, 0, -2], "size": [4, 12, 4], "uv": [0, 16]}
 					]
 				},
 				{
 					"name": "right_leg",
-					"pivot": [0, 0, 0],
+					"pivot": [0, 12, -2],
 					"cubes": [
 						{"origin": [-4, 0, -2], "size": [4, 12, 4], "uv": [0, 16]}
 					]

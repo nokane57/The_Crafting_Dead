@@ -84,9 +84,11 @@ public class WalkerEntity extends Animal implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if (tAnimationState.isMoving()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.walker.walk", Animation.LoopType.DEFAULT));
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.walker.walk", Animation.LoopType.LOOP));
+            return PlayState.CONTINUE;
+        } else {
+            return PlayState.STOP;
         }
-        return PlayState.CONTINUE;
     }
 
     @Override

@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import fr.nokane.crafting.entity.ModEntity;
 import fr.nokane.crafting.entity.client.WalkerRenderer;
 import fr.nokane.crafting.item.ModItems;
+import fr.nokane.crafting.networking.ModMessages;
 import fr.nokane.crafting.utils.Constants;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,7 +39,7 @@ public class CraftingDead {
 
     // Common Setup
     private void commonSetup(FMLCommonSetupEvent event) {
-
+        ModMessages.register();
     }
 
     // creatif Tabs
